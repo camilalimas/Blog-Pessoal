@@ -15,7 +15,7 @@ import jakarta.validation.constraints.Size;
 @Entity
 @Table(name = "tb_postagens")
 public class Postagem {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -32,7 +32,7 @@ public class Postagem {
 	private LocalDateTime data;
 
 	public Long getId() {
-		return id;
+		return this.id;
 	}
 
 	public void setId(Long id) {
@@ -40,7 +40,7 @@ public class Postagem {
 	}
 
 	public String getTitulo() {
-		return titulo;
+		return this.titulo;
 	}
 
 	public void setTitulo(String titulo) {
@@ -48,7 +48,7 @@ public class Postagem {
 	}
 
 	public String getTexto() {
-		return texto;
+		return this.texto;
 	}
 
 	public void setTexto(String texto) {
@@ -56,7 +56,7 @@ public class Postagem {
 	}
 
 	public LocalDateTime getData() {
-		return data;
+		return this.data;
 	}
 
 	public void setData(LocalDateTime data) {
